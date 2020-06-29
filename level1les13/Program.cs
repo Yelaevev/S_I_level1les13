@@ -37,16 +37,16 @@ namespace Level1Space
             for (int i = 0; i < track.Length; i++)
             {
                 flag = true;
-                time = time + track[i][0] - way;
+                time = time + track[i][0] - way; // время в пути до светофора
                 if (time < track[i][1])
                 {
                     time = track[i][1];
                     flag = false;
                 }
 
-                if ((flag) && ((time) % (track[i][1] + track[i][2]) < track[i][1]))
+                if ((flag) && ((time) % (track[i][1] + track[i][2]) < track[i][1])) // расчитываем нужно ли ожидать зеленый свет
                 {
-                    time = time + track[i][1] - ((time) % (track[i][1] + track[i][2]));
+                    time = time + track[i][1] - ((time) % (track[i][1] + track[i][2])); // сколько ожидать
                 }
 
                 way = track[i][0];
