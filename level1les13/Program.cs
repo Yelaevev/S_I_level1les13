@@ -29,8 +29,8 @@ namespace Level1Space
             {
                 if (L < track[i][0])
                 {
-                    Console.WriteLine("initial condition is not correct");
-                    return 0;
+                   
+                    return L;
                 }
             }
 
@@ -63,11 +63,11 @@ namespace Level1Space
         //    int L = 10;
         //    int N = 2;
         //    int[][] track = new int[N][];
-        //    track[0] = new int[3] { 10, 3, 5 };
-        //    track[1] = new int[3] { 1, 5, 10 };
+        //    track[0] = new int[3] { 15, 5, 5 };
+        //    track[1] = new int[3] { 11, 2, 2 };
         //    Console.WriteLine(7 % 13);
         //    int time = Unmanned(L, N, track);
-           
+
         //    Console.WriteLine(time);
         //}
     }
